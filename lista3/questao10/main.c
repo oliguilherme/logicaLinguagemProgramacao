@@ -27,23 +27,17 @@ int main() {
         printf("\n\nCusto a pagar: R$%.2f\n\n", 1.00);
     } else if (diferenca_min > 60 && diferenca_min <= 120) {
         printf("\n\nCusto a pagar: R$%.2f\n\n", 2.00);
-    } else if (diferenca_min > 121 && diferenca_min <= 180) {
+    } else if (diferenca_min > 120 && diferenca_min <= 180) {
         printf("\n\nCusto a pagar: R$%.2f\n\n", 1.40 * 3.00);
-    } else if (diferenca_min > 181 && diferenca_min <= 240) {
+    } else if (diferenca_min > 180 && diferenca_min <= 240) {
         printf("\n\nCusto a pagar: R$%.2f\n\n", 1.40 * 4);
-    } else if (diferenca_min >= 300) {
+    } else if (diferenca_min > 240) {
         if (diferenca_hora % 60 !=  0) {
             printf("\n\nCusto a pagar:R$%.2f\n\n", (2.00 * diferenca_hora) + 1.00);
         } else {
              printf("\n\nCusto a pagar:R$%.2f\n\n", 2.00 * diferenca_hora);
         }
     }
-
-
-
-
     
-
-
     return 0;
 }
