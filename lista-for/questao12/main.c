@@ -6,7 +6,7 @@ int main() {
 
   int x, y, aux = 0;
 
-  printf("Informe o total de números e a quantidade de colunas: ");
+  printf("Informe o total de numeros e a quantidade de colunas: ");
   scanf("%d %d", &x, &y);
 
   for (int i = 1; i <= x; i++) {
